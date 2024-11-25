@@ -56,13 +56,13 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{Auth::user()->role_id == 1 ? route('guarantees'): route('guarantees')}}">
-                <!-- <div class="sidebar-brand-icon rotate-n-15" style="color:#ed1c24;">
+            <!-- <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{Auth::user()->role_id == 1 ? route('guarantees'): route('guarantees')}}">
+                <-- <div class="sidebar-brand-icon rotate-n-15" style="color:#ed1c24;">
                     <i class="fas fa-laugh-wink"></i>
-                </div> -->
+                </div> --
                 
                 <div class="mx-3"></div>
-            </a>
+            </a> -->
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
@@ -98,47 +98,7 @@
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
-                        @if(Auth::user()->role_id == 2)                    
-                    @php
-                        $notifications = App\Models\notifications::where('user_id',Auth::user()->id)->get();
-                        
-                    @endphp
-                        <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter">{{$notifications->count()}}</span>
-                            </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Notifications
-                                </h6>
-                                @if($notifications->count() > 0)
-                                @foreach($notifications as $notification_data)
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">{{ $notification_data->created_at->format('M d, Y')}}</div>
-                                        <span class="font-weight-bold">{{$notification_data->message}}</span>
-                                    </div>
-                                </a>
-                                @endforeach
-                               
-                                <a class="dropdown-item text-center small text-gray-500 delete_notifications" href="{{route('notificationDelete')}}" uid="{{base64_encode(Auth::user()->id)}}">Clear All Notifications</a>
-                                @else
-                                <p class="text-center text-gray-500 my-4">No Notification!</p>
-                                @endif
-                            </div>
-                        </li>
-                    @endif
+                    
                         <!-- Nav Item - Alerts -->
                         <div class="topbar-divider d-none d-sm-block"></div>
 

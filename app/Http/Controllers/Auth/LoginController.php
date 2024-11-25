@@ -27,7 +27,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/bills';
+    protected $redirectTo = '/guarantee';
    
     /**
      * Create a new controller instance.
@@ -51,13 +51,11 @@ class LoginController extends Controller
         if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password']),$request->remember))
         {
             if (auth()->user()->is_admin == 1) {
-                if(auth()->user()->role_id == 1){
-                return redirect()->route('bills');
-                }else{
-                    return redirect()->route('bills');
-                }
+                
+                    return redirect()->route('guarantees');
+                
             }else{
-                return redirect()->route('bills');
+                return redirect()->route('guarantees');
             }
         }else{
             return redirect()->route('login')
