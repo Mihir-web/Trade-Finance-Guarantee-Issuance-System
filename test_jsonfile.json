@@ -1,6 +1,6 @@
 [
     {
-        "Corporate Reference Number": "1",
+        "Corporate Reference Number": "3",
         "Guarantee Type": "Bank",
         "Nominal Amount": "10000",
         "Nominal Amount Currency": "USD",
@@ -11,7 +11,7 @@
         "Beneficiary Address": "456 Elm St"
     },
     {
-        "Corporate Reference Number": "2",
+        "Corporate Reference Number": "4",
         "Guarantee Type": "Bid Bond",
         "Nominal Amount": "2000",
         "Nominal Amount Currency": "CAD",
