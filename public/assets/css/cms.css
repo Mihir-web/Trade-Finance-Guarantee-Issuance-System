@@ -1,0 +1,30 @@
+.cms-description-title{
+    color: #ed1c24;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cms-feature-type span{
+    color:#000;
+    font-weight: 500;
+}
+
+.cms-feature-type ul li{
+    list-style-type: disc;
+    
+}
+
+.cms-feature-type ul li::marker{
+color: #ed1c24;
+}
+
+
+.features-parent-ul{
+    columns: 3;
+}
+
+@media screen and (max-width: 991px) {
+.features-parent-ul{
+    columns: 2;
+}
+}

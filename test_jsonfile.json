@@ -1,0 +1,24 @@
+[
+    {
+        "Corporate Reference Number": "1",
+        "Guarantee Type": "Bank",
+        "Nominal Amount": "10000",
+        "Nominal Amount Currency": "USD",
+        "Expiry Date": "31-12-2024",
+        "Applicant Name": "John Doe Corp",
+        "Applicant Address": "123 Main St",
+        "Beneficiary Name": "ABC Bank",
+        "Beneficiary Address": "456 Elm St"
+    },
+    {
+        "Corporate Reference Number": "2",
+        "Guarantee Type": "Bid Bond",
+        "Nominal Amount": "2000",
+        "Nominal Amount Currency": "CAD",
+        "Expiry Date": "25-11-2024",
+        "Applicant Name": "Mihir",
+        "Applicant Address": "Humber College",
+        "Beneficiary Name": "CIBC Bank",
+        "Beneficiary Address": "Scarborough"
+    }
+]
